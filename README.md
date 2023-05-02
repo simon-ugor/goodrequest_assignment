@@ -33,6 +33,7 @@ Vizuálna kvalita spracovania aplikácie a štýlovanie je tiež predmetom hodno
     *  Použiť TypeScript
     *  Použiť lokalizačnú knižnicu na stringy (napr. i18next)
     *  Použiť styled-components
+    *  Myslieť na accessibility (https://www.goodrequest.com/sk/blog/pristupnost-webu-pre-vyvojarov)
     
 *  Ak vám ostane čas alebo chuť :):
 
@@ -85,6 +86,7 @@ Visual quality of the application and styling is also a part of the evaluation. 
     *  Use TypeScript
     *  Use localization library for strings (e.g. i18next)
     *  Use styled-components
+    *  Make it accessible (https://www.goodrequest.com/blog/introduction-to-accessibility)
     
 * If you have some spare time :):
 
