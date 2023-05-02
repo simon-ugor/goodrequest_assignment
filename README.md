@@ -43,7 +43,8 @@ Vizuálna kvalita spracovania aplikácie a štýlovanie je tiež predmetom hodno
 
 * Naklonujte si tento repozitár k sebe
 * Umiestnite ho do verejného github / bitbucket repozitáru a svoju prácu priebežne commitujte
-* Do repozitáru udeľte prístup kontu peter.reguli@goodrequest.com (v prípade súkromného repo na bitbucket) alebo pošlite link na verejné github repo na tento e-mail
+* Do repozitáru udeľte prístup kontu peter.reguli@goodrequest.com (v prípade súkromného repo na bitbucket) alebo pošlite link na verejné github repo na tento e-mail
+* Ozvite sa veronika.stefanatna@goodrequest.com a peter.reguli@goodrequest.com keď je zadanie za vás pripravené na review
 * Commit messages a spôsob commitovania budú tiež predmetom hodnotenia
 
 **Ak by ste mali hocijaké otázky alebo ste sa niekde zasekli:**
@@ -95,6 +96,7 @@ Visual quality of the application and styling is also a part of the evaluation. 
 * Clone this repository to you
 * Put it in public github / bitbucket repository and commit your work continuously
 * Grant access to the repository to the account peter.reguli@goodrequest.com (in case of the private repo on bitbucket) or send a link to public github repo to this email.
+* Let Veronika and Peter know on their email adresses that your work is ready for review (veronika.stefanatna@goodrequest.com and peter.reguli@goodrequest.com)
 
 Commit messages and the way of commmiting will also be evaluated.
 
