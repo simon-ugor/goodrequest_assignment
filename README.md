@@ -1,3 +1,13 @@
+Dobrý deň, tu je moje vypracované zadanie od Vás.
+
+**Tech stack:**
+* ReactJS
+* TypeScript
+* TailwindCSS + DaisyUI + styled-components
+* Redux (state management)
+* Formik (forms)
+* ZOD (form validation)
+
 # Zadanie Frontend developer GoodRequest
 
 Cieľom zadania je vytvoriť jednoduchú aplikáciu v Reacte, ktorá slúži ako formulár pre nadáciu GoodBoy na podporu slovenských útulkov pre psy. 
