@@ -73,7 +73,7 @@ const ThirdPage = ({ backClick }: Props) => {
         <PrimaryText>{personalInformation.prefix + " " + personalInformation.phone}</PrimaryText>
 
         <div className="form-control flex flex-row w-full justify-start">
-          <input onClick={() => setCheckboxWarning(false)} checked={checked} onChange={() => setChecked(!checked)} type="checkbox" className={checkboxWarning? "checkbox mr-2 border-red": "checkbox mr-2"} />
+          <input onClick={() => setCheckboxWarning(false)} checked={checked} onChange={() => setChecked((prevState) => !prevState)} type="checkbox" className={checkboxWarning? "checkbox mr-2 border-red": "checkbox mr-2"} />
           <span className={checkboxWarning ? "text-red" : ""}>Súhlasím so spracovaním mojich osobných údajov</span>
         </div>
 
