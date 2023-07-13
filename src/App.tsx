@@ -3,9 +3,9 @@ import { useState } from 'react';
 //Images
 import DogImage from "./images/dogImage.png";
 
-import FirstPage from './pages/FirstPage';
-import SecondPage from './pages/SecondPage';
-import ThirdPage from './pages/ThirdPage';
+import FirstPage from './pages/ShelterSelectionPage';
+import SecondPage from './pages/PersonalDataPage';
+import ThirdPage from './pages/SubmitPage';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 

@@ -11,7 +11,7 @@ interface Props {
   continueClick: (pageNumber:number) => void
 }
 
-const FirstPage = ({ continueClick }: Props) => {
+const ShelterSelectionPage = ({ continueClick }: Props) => {
 
   useEffect(() => {
     fetch("https://frontend-assignment-api.goodrequest.dev/api/v1/shelters")
@@ -174,4 +174,4 @@ const FirstPage = ({ continueClick }: Props) => {
   )
 }
 
-export default FirstPage
+export default ShelterSelectionPage
