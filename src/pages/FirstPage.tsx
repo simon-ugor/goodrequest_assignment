@@ -23,7 +23,7 @@ const FirstPage = ({ continueClick }: Props) => {
 
   const toggleClick = (e: React.MouseEvent<HTMLElement>) => {
     let buttonId:string = e.currentTarget.id;
-    if (buttonId == "1") {
+    if (buttonId === "1") {
       setToggleStyle({1: "bg-brown text-white", 2: "bg-white text-black"})
       setHelpType("Chcem finančne prispieť konkrétnemu útulku");
       setMandatory("Povinné *");
@@ -39,22 +39,22 @@ const FirstPage = ({ continueClick }: Props) => {
     let buttonId:string = e.currentTarget.id;
     setPriceInput({value: priceInput.value, style: "bg-transparent"})
     setRedBorders({shelter: redBorders.shelter, priceInput: "border-gainsboro"})
-    if (buttonId == "5") {
+    if (buttonId === "5") {
       setPriceButtonStyle({1: "bg-brown", 2: "bg-white", 3: "bg-white", 4: "bg-white", 5: "bg-white", 6: "bg-white"});
       setAmount(5);
-    } else if (buttonId == "10") {
+    } else if (buttonId === "10") {
       setPriceButtonStyle({1: "bg-white", 2: "bg-brown", 3: "bg-white", 4: "bg-white", 5: "bg-white", 6: "bg-white"});
       setAmount(10);
-    } else if (buttonId == "20") {
+    } else if (buttonId === "20") {
       setPriceButtonStyle({1: "bg-white", 2: "bg-white", 3: "bg-brown", 4: "bg-white", 5: "bg-white", 6: "bg-white"});
       setAmount(20);
-    } else if (buttonId == "30") {
+    } else if (buttonId === "30") {
       setPriceButtonStyle({1: "bg-white", 2: "bg-white", 3: "bg-white", 4: "bg-brown", 5: "bg-white", 6: "bg-white"});
       setAmount(30);
-    } else if (buttonId == "50") {
+    } else if (buttonId === "50") {
       setPriceButtonStyle({1: "bg-white", 2: "bg-white", 3: "bg-white", 4: "bg-white", 5: "bg-brown", 6: "bg-white"});
       setAmount(50);
-    } else if (buttonId == "100") {
+    } else if (buttonId === "100") {
       setPriceButtonStyle({1: "bg-white", 2: "bg-white", 3: "bg-white", 4: "bg-white", 5: "bg-white", 6: "bg-brown"});
       setAmount(100);
     }
@@ -62,8 +62,8 @@ const FirstPage = ({ continueClick }: Props) => {
 
   const dropdownChange = (e:React.FormEvent<HTMLSelectElement>) => {
     let value = e.currentTarget.value;
-    allShelters.map((s) => {
-      if (s.name == value) {
+    allShelters.forEach((s) => {
+      if (s.name === value) {
         setShelter({id: s.id, name: s.name})
       }
     })
@@ -75,15 +75,15 @@ const FirstPage = ({ continueClick }: Props) => {
   }
 
   const submitClick = () => {
-    if (helpType == "Chcem finančne prispieť konkrétnemu útulku" && (shelter.id == 0)) {
+    if (helpType === "Chcem finančne prispieť konkrétnemu útulku" && (shelter.id === 0)) {
       setRedBorders({"shelter": "border-red", "priceInput": redBorders.priceInput});
     } else {
       let values;
-      if (priceInput.style == "bg-brown" && (priceInput.value != "" && priceInput.value != "0")) {
+      if (priceInput.style === "bg-brown" && (priceInput.value !== "" && priceInput.value !== "0")) {
         values = {helpType: helpType, shelter: shelter, amount: parseInt(priceInput.value)}
         dispatch(submitGeneral(values))
         continueClick(1);
-      } else if (priceInput.style == "bg-brown" && (priceInput.value == "" || priceInput.value == "0")) {
+      } else if (priceInput.style === "bg-brown" && (priceInput.value === "" || priceInput.value === "0")) {
         setRedBorders({"shelter": redBorders.shelter, "priceInput": "border-red"})
       } else {
         values = {helpType: helpType, shelter: shelter, amount: amount}
@@ -162,7 +162,7 @@ const FirstPage = ({ continueClick }: Props) => {
                 <PriceButton onClick={priceButtonClick} id='50' className={priceButtonStyle[5]}>50 €</PriceButton>
                 <PriceButton onClick={priceButtonClick} id='100' className={priceButtonStyle[6]}>100 €</PriceButton>
                 <PriceInput onClick={priceInputClick} className={`border-2 ${priceInput.style} ${redBorders.priceInput}`}>
-                  <input onChange={(e) => setPriceInput({value: e.currentTarget.value, style: priceInput.style})} value={priceInput.value=="" ? "" : priceInput.value} className='w-4/6 bg-transparent ml-2 text-black text-center border-b-2 font-bold outline-none'></input>
+                  <input onChange={(e) => setPriceInput({value: e.currentTarget.value, style: priceInput.style})} value={priceInput.value==="" ? "" : priceInput.value} className='w-4/6 bg-transparent ml-2 text-black text-center border-b-2 font-bold outline-none'></input>
                   <div className='w-2/6 h-full flex justify-center items-center'><SubTitle>€</SubTitle></div>
                 </PriceInput>
               </div>
